@@ -28,7 +28,6 @@ export const App = () => {
 
   useEffect(() => {
     localStorage.setItem('contacts', JSON.stringify(contacts));
-    console.log('ще раз');
   }, [contacts]);
 
   const addContact = e => {
@@ -48,7 +47,6 @@ export const App = () => {
     }
 
     setContacts(contactsLists);
-    console.log('додав контакт');
   };
 
   const handleChange = e => {
